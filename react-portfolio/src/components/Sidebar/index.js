@@ -4,6 +4,7 @@ import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin, faSkype } from '@fortawesome/free-brands-svg-icons'
 
 
 const Sidebar = () => (
@@ -23,6 +24,23 @@ const Sidebar = () => (
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
         </nav>
+        <ul>
+            <li>
+                <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/simon-haughom-458a371a5/'>
+                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d44" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel='noreferrer' href='https://github.com/mohguah'>
+                    <FontAwesomeIcon icon={faGithub} color="#4d4d44" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel='noreferrer' href='skype:live:slimosimo'>
+                    <FontAwesomeIcon icon={faSkype} color="#4d4d44" />
+                </a>
+            </li>
+        </ul>
     </div>
 )
 
