@@ -8,6 +8,8 @@ import Loader from 'react-loaders'
 
 
 const About = () => {
+    const [letterClass, setLetterClass] = useState('text-animate')
+
 
     return (
         <>
@@ -15,6 +17,7 @@ const About = () => {
                 <div className='text-zone'>
                     <h1>
                         <AnimatedLetters
+                            letterClass={letterClass}
                             strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
                             idx={15} />
                     </h1>

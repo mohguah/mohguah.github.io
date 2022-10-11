@@ -40,7 +40,7 @@ const Home = () => {
                 </div>
                 <Logo />
             </div>
-            <Loader type="ball-triangle-path" />
+            {/* <Loader type="ball-triangle-path" /> */}
         </>
     );
 }
