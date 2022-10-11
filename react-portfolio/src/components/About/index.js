@@ -3,6 +3,7 @@ import { SiRstudio } from "react-icons/si";
 import { useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
+import Loader from 'react-loaders'
 
 
 
@@ -57,6 +58,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            {/* <Loader type="ball-triangle-path" /> */}
         </>
     )
 }
