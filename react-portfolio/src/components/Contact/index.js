@@ -1,11 +1,31 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
+import emailjs from '@emailjs/browser';
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
+    const form = useRef()
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            e.target,
+            process.env.REACT_APP_EMAILJS_USER_ID)
+            .then((result) => {
+                alert('Message successfully sent')
+                e.target.reset()
+            }, (error) => {
+                alert('Failed to send the messge, please try again')
+                console.log(error)
+            });
+        // e.target.reset()
+    }
 
     return (
         <>
@@ -23,12 +43,13 @@ const Contact = () => {
                         et dolore magna aliqua. Ut enim ad minim veniam, quis
                     </p>
                     <div className='contact-form'>
-                        <form>
+                        <form ref={form} onSubmit={sendEmail}>
                             <ul>
                                 <li className='half'>
                                     <input
                                         type='text'
                                         name='name'
+                                        id='name'
                                         placeholder='Name'
                                         required />
                                 </li>
@@ -36,6 +57,7 @@ const Contact = () => {
                                     <input
                                         type='email'
                                         name='email'
+                                        id='email'
                                         placeholder='Email'
                                         required />
                                 </li>
@@ -43,22 +65,42 @@ const Contact = () => {
                                     <input
                                         type='text'
                                         name='subject'
+                                        id='subject'
                                         placeholder='Subject'
                                         required />
                                 </li>
                                 <li>
                                     <textarea
                                         name='message'
-                                        placeholder='Message' 
-                                    ></textarea>
+                                        id='message'
+                                        placeholder='Message'
+                                        required />
                                 </li>
                                 <li>
                                     <input
-                                        type='submit' className='flat-button' value='SEND' />
+                                        type='submit' id='button' className='flat-button' value='SEND' />
                                 </li>
                             </ul>
                         </form>
                     </div>
+                </div>
+                <div className='info-map'>
+                    Simon Haughom
+                    <br />
+                    Norway,
+                    <br />
+                    Str.name, nr
+                    <br />
+                    Oslo <br />
+                    <span>simon.haughom@gmail.com</span>
+                </div>
+                <div className='map-wrap'>
+                    <MapContainer center={[59.911491, 10.757933]} zoom={13}>
+                        <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
+                        <Marker position={[59.911491, 10.757933]}>
+                            <Popup>Simon lives here!</Popup>
+                        </Marker>
+                    </MapContainer>
                 </div>
             </div>
             {/* <Loader type='ball-triangle-path' /> */}
