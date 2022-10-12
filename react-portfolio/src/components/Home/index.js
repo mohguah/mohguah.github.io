@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import LogoTitle from '../../assets/images/logo-s.png'
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
+import Portfolio from './Portfolio';
 // import Logo from './Logo';
 
 const Home = () => {
@@ -47,7 +48,7 @@ const Home = () => {
                     {/* <Loader type="ball-triangle-path" /> */}
                 </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={0.5}>
-                    <h2>Hey here is another page</h2>
+                    <Portfolio />
                 </ParallaxLayer>
             </Parallax>
         </>
