@@ -1,5 +1,5 @@
 import { FaGitAlt, FaHtml5, FaJsSquare, FaPython, FaReact } from "react-icons/fa"
-import { SiRstudio } from "react-icons/si";
+import { SiRstudio, SiSpring } from "react-icons/si";
 import { useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
@@ -50,7 +50,7 @@ const About = () => {
                             <SiRstudio color='#276DC2' />
                         </div>
                         <div className='face4'>
-                            <FaJsSquare color='#EFD81D' />
+                            <SiSpring color='#8BC34A' />
                         </div>
                         <div className='face5'>
                             <FaGitAlt color='#EC4D28' />
