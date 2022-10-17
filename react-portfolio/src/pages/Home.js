@@ -2,11 +2,10 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { useState } from 'react';
 import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
-import LogoTitle from '../../assets/images/logo-s.png'
-import AnimatedLetters from '../AnimatedLetters';
-import './index.scss';
-import Portfolio from './Portfolio';
-// import Logo from './Logo';
+import LogoTitle from '../assets/images/logo-s.png'
+import AnimatedLetters from '../components/AnimatedLetters';
+import './Home.scss';
+import Portfolio from '../components/Portfolio';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')

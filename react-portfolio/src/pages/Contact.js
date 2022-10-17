@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import Loader from 'react-loaders';
-import AnimatedLetters from '../AnimatedLetters';
-import './index.scss';
+import AnimatedLetters from '../components/AnimatedLetters';
+import './Contact.scss';
 import emailjs from '@emailjs/browser';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 

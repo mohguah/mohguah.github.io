@@ -1,8 +1,8 @@
 import { FaGitAlt, FaHtml5, FaJsSquare, FaPython, FaReact } from "react-icons/fa"
 import { SiRstudio, SiSpring } from "react-icons/si";
 import { useState } from 'react';
-import AnimatedLetters from '../AnimatedLetters';
-import './index.scss';
+import AnimatedLetters from '../components/AnimatedLetters';
+import './About.scss';
 import Loader from 'react-loaders'
 
 

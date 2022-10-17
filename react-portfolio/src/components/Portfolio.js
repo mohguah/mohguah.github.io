@@ -1,7 +1,7 @@
-import './index.scss';
-import Heatmap from '../../../assets/images/chosen_maxvalues.png'
-import Kelp from '../../../assets/images/kelp-media.jpg'
-import Postfilter from '../../../assets/images/postfilter.png'
+import './Portfolio.scss';
+import Heatmap from '../assets/images/chosen_maxvalues.png'
+import Kelp from '../assets/images/kelp-media.jpg'
+import Postfilter from '../assets/images/postfilter.png'
 import { GiAlgae } from 'react-icons/gi'
 // import Paper from "@material-ui/core/Paper";
 // import Grid from "@material-ui/core/grid";
