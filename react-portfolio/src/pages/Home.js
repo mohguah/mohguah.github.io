@@ -6,11 +6,12 @@ import LogoTitle from '../assets/images/logo-s.png'
 import AnimatedLetters from '../components/AnimatedLetters';
 import './Home.scss';
 import Portfolio from '../components/Portfolio';
+import SkillCard from '../components/SkillCard';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = "imon".split("")
-    const jobArray = "Developer".split("")
+    const jobArray = "Biologist and developer".split("")
 
     // useEffect(() => {
     //     return setTimeout(() => {
@@ -20,29 +21,31 @@ const Home = () => {
 
     return (
         <>
-            <Parallax pages={2}>
+            <Parallax pages={2} className='parallax'>
                 <ParallaxLayer offset={0} speed={2.5}>
                     <div className="container home-page">
                         <div className="text-zone">
                             <h1>
                                 <span className={letterClass}>H</span>
                                 <span className={`${letterClass} _12`}>i,</span>
-                                <br />
-                                <span className={`${letterClass} _13`}>I</span>
-                                <span className={`${letterClass} _14`}>'m</span>
+                                <span className={`${letterClass} _13`}></span>
+                                <span className={`${letterClass} _14`}>I</span>
+                                <span className={`${letterClass} _15`}>'m</span>
 
                                 {/* <br /> I'm */}
                                 <img src={LogoTitle} alt="developer" />
                                 <AnimatedLetters letterClass={letterClass}
-                                    strArray={nameArray} idx={15} />
+                                    strArray={nameArray} idx={16} />
                                 <br />
                                 <AnimatedLetters letterClass={letterClass}
-                                    strArray={jobArray} idx={22} />
+                                    strArray={jobArray} idx={13} />
                             </h1>
-                            <h2>JavaScript / Python / R / Bioinformatics</h2>
+                            <h2> R / Spring / Python / JavaScript / Flask</h2>
+                            {/* <br /> */}
+                            <h2>Bioinformatics / Kelp biology / Ecotoxicology</h2>
                             <Link to="/contact" className='flat-button'>CONTACT ME</Link>
                         </div>
-                        {/* <Logo /> */}
+                        <SkillCard /> 
                     </div>
                     {/* <Loader type="ball-triangle-path" /> */}
                 </ParallaxLayer>

@@ -1,14 +1,25 @@
+// .parallax {
+//     // background: #0098D6;
+//     // background: -moz-linear-gradient(top, #0098D6 0%, #0079AB 50%, #006994 100%);
+//     // background: -webkit-linear-gradient(top, #0098D6 0%, #0079AB 50%, #006994 100%);
+//     // background: linear-gradient(to bottom, #0098D6 0%, #0079AB 50%, #006994 100%);
+
+// }
+
 .home-page {
 
+    display: flex;
+    justify-content: space-around;
+
     .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%; 
+        position: relative;
+        left: 2%;
+        // top: 37%;
+        // transform: translateY(-50%);
+        width: 40%;
         max-height: 90%;
     }
-    
+
     h1 {
         color: #fff;
         font-size: 53px;
@@ -17,7 +28,7 @@
         font-weight: 400;
 
         &::before {
-            content: '<h1>';
+            // content: '<h1>';
             font-family: 'La Belle Aurore';
             color: #ffd700;
             font-size: 18px;
@@ -28,7 +39,7 @@
         }
 
         &::after {
-            content: '<h1/>';
+            // content: '<h1/>';
             font-family: 'La Belle Aurore';
             color: #ffd700;
             font-size: 18px;
@@ -51,24 +62,24 @@
     }
 
     h2 {
-        color: #8d8d8d;
+        color: #2a2a2a;
         margin-top: 20px;
         font-weight: 400;
-        font-size: 11px;
+        font-size: 23px;
         font-family: sans-serif;
         letter-spacing: 3px;
         animation: fadeIn 1s 1.8s backwards;
     }
 
     .flat-button {
-        color: #ffd700;
-        font-size: 13px;
+        color: black;
+        font-size: 15px;
         font-weight: 400;
         letter-spacing: 4px;
         font-family: sans-serif;
         text-decoration: none;
         padding: 10px 18px;
-        border: 1px solid #ffd700;
+        border: 2px solid black;
         margin-top: 25px;
         float: left;
         animation: fadeIn 1s 1.8s backwards;
