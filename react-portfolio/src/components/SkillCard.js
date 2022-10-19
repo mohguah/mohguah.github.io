@@ -19,12 +19,12 @@ const SkillCard = () => {
             <p className='p-title'>Dev tools:</p>
             <div className='list-dual'>
             <ul>
-                <li>Terminal</li>
+                <li>React</li>
                 <li>Visual Studio Code</li>
                 <li>R Studio</li>
                 <li>IntelliJ</li>
+                <li>Terminal</li>
                 <li>Docker</li>
-                <li>Conda</li>
                 <li>Conda</li>
             </ul>
             <ul>

@@ -38,9 +38,10 @@ const Contact = () => {
                             idx={15} />
                     </h1>
                     <p>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        I'm looking for a full time junior developer position, 
+                        or a job in biology. However if you have a proposal
+                        for a freelance opportunity, or any other questions, 
+                        don't hesitate to contact me.
                     </p>
                     <div className='contact-form'>
                         <form ref={form} onSubmit={sendEmail}>
@@ -89,7 +90,7 @@ const Contact = () => {
                     <br />
                     Norway,
                     <br />
-                    Str.name, nr
+                    John Colletts Allé 55
                     <br />
                     Oslo <br />
                     <span>simon.haughom@gmail.com</span>

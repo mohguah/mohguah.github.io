@@ -10,7 +10,6 @@ import Loader from 'react-loaders'
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
 
-
     return (
         <>
             <div className='container about-page'>
@@ -22,19 +21,18 @@ const About = () => {
                             idx={15} />
                     </h1>
                     <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        I'm an amitious full stack developer looking for an opportunity to
+                        grow in an established IT company. Although my study provided a fair
+                        bit of coding experience, most of my coding skill are self-taught.
                     </p>
                     <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        I am naturally curious, proactive, and perpetually working on 
+                        improving my code one problem at a time. 
                     </p>
                     <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        If I should define myself in one sentence that would be a football 
+                        enthusiast, enjoyer of golf, man of nature, music lover, 
+                        and tech-obsessed!
                     </p>
                 </div>
 
