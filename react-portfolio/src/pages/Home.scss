@@ -6,6 +6,11 @@
 
 // }
 
+// .parallax {
+//     background-image: url('../assets/images/fern.jpg');
+//     background-size: 100%;
+// }
+
 .home-page {
 
     display: flex;
@@ -21,7 +26,7 @@
     }
 
     h1 {
-        color: #fff;
+        color: #FAF9F6;
         font-size: 53px;
         margin: 0;
         font-family: 'Coolvetica';
@@ -62,24 +67,24 @@
     }
 
     h2 {
-        color: #2a2a2a;
+        color: #FAF9F6;
         margin-top: 20px;
         font-weight: 400;
-        font-size: 23px;
+        font-size: 18px;
         font-family: sans-serif;
         letter-spacing: 3px;
         animation: fadeIn 1s 1.8s backwards;
     }
 
     .flat-button {
-        color: black;
+        color: #f8f8ff;
         font-size: 15px;
         font-weight: 400;
         letter-spacing: 4px;
         font-family: sans-serif;
         text-decoration: none;
         padding: 10px 18px;
-        border: 2px solid black;
+        border: 1px solid #FAF9F6;
         margin-top: 25px;
         float: left;
         animation: fadeIn 1s 1.8s backwards;
@@ -88,6 +93,23 @@
         &:hover {
             background: #ffd700;
             color: #333;
+        }
+    }
+
+    .scroll-message {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        bottom: 69px;
+        left: 50px;
+        color: #FAF9F6;
+        font-size: 17px;
+
+        svg {
+            height: 100%;
+            width: 100%;
+            font-size: 30px;
+            margin-left: 5px;
         }
     }
 }

@@ -1,53 +1,129 @@
 .grid-container {
-    margin: 20px;
-    width: 500px;
-    height: 80%;
-    // background-color: rgb(0, 0, 0);
-    display: grid;
-    grid-template-columns: 275px 275px;
-    grid-template-rows: 300px 300px;
-    grid-row: auto auto;
-    gap: 30px;
-    position: absolute;
-    left: 10%;
-    top: 35%;
-    transform: translateY(-40%);
-    // width: 40%; 
-    // max-height: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: -60%;
+    margin-left: 28px;
+    margin-right: 28px;
 
-    // grid-template-columns: repeat(2, 2fr);
+    .port-item-1 {
+        background-image: url('../assets/images/kelp-media.jpg');
+        background-size: cover;
+        position: relative;
+        // background-position: 82%;
 
-    .image-container {
-        background: #0E2075;
-        background: -moz-linear-gradient(left, #0E2075 0%, #69c6cc 100%);
-        background: -webkit-linear-gradient(left, #0E2075 0%, #69c6cc 100%);
-        background: linear-gradient(to right, #0E2075 0%, #69c6cc 100%);
+        .title-span {
+            color: black;
+            top: 10%;
+            left: -14%;
+        }
+    }
 
+    .port-item-2 {
+        background-image: url('../assets/images/holding-burger.jpg');
+        background-size: cover;
+        // background-position: 10%;
 
+        p {
+            color: black;
+            top: -24px;
+        }
+    }
+
+    .grid-item {
+        display: block;
+        position: relative;
+        height: 450px;
+        width: 300px;
+        // color: #FAF9F6;
+        opacity: 0.85;
+        border: 1px black solid;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.36);
+        border-radius: 25px;
         padding: 20px;
-        border-radius: 10px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 40px;
-        font-family: sans-serif;
-        opacity: 0.6;
-        transition: all 0.8s ease;
+        padding-bottom: 4px;
+        padding-left: 25px;
+        font-size: 23px;
+        opacity: 0.85;
+        transition: all 1.3s ease;
+
+
+        // .fa-stack {
+        //     position: absolute;
+        // }
+
+        // .fa-stack-2x {
+        //     font-size: 70px;
+        // }
+
+        .title-span {
+            position: relative;
+            text-align: center;
+            // top: 24%;
+            padding: 15px;
+            width: 100;
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        .bread-span {
+            visibility: hidden;
+            font-size: 18px;
+            position: relative;
+            // top: 115px;
+            // left: -20px;
+            color: #FAF9F6;
+        }
+
+        a.bread-span {
+            color: #f8f8ff;
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            font-family: sans-serif;
+            text-decoration: none;
+            padding: 10px 18px;
+            border: 1px solid #FAF9F6;
+            margin-top: 25px;
+            float: left;
+            animation: fadeIn 1s 1.8s backwards;
+            white-space: nowrap;
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
+
+
+
+            &:hover {
+                background: #ffd700;
+                color: #333;
+                justify-self: center;
+            }
+        }
 
         &:hover {
-            background: #69c6cc;
+            background: #1975A7;
+            // color: #efefef;
             // background: -moz-linear-gradient(left, #99F8FF 0%, #0E2075 100%);
             // background: -webkit-linear-gradient(left, #99F8FF 0%, #0E2075 100%);
             // background: linear-gradient(to right, #99F8FF 0%, #0E2075 100%);
             opacity: 1;
+            background-color: #1975A7;
+            transition: all 0.8s ease;
         }
+
+        &:hover .bread-span {
+            visibility: visible;
+        }
+
+        &:hover .title-span {
+            display: none
+        }
+
+        // &:hover:before {
+        //     // position: absolute;
+        //     // color: #efefef;
+        // }
     }
-}
-
-
-
-img {
-    width: 200px;
-    height: 200px;
 }

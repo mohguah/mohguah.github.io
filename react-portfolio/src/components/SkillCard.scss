@@ -1,18 +1,66 @@
 .card-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 500px;
+    justify-content: space-around;
+    height: 508px;
     width: 325px;
-    background-color: #efefef;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.36);
+    background-color: #FAF9F6;
+    opacity: 0.85;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.36);
     border-radius: 25px;
+    padding: 20px;
+    padding-bottom: 4px;
+    padding-left: 25px;
 
+    span {
+        font-size: 50px;
+        left: -30px;
 
+        .fa-stack {
+            position: absolute;
+            padding-bottom: 7px;
+        }
 
-    img {
-        border-radius: 7px;
-        height: 250px;
-        color: #5BE9B9;
+        .fa-stack-2x {
+            font-size: 65px;
+        }
+
+        .fa-stack-1x {
+            font-size: 55px;
+        }
+
+        // &:first-child {
+        //     height: 70px;
+        // }
     }
+
+    h1 {
+        align-self: left;
+        font-size: 28px;
+        color: black;
+    }
+
+    .p-title {
+        font-size: 18px;
+        color: #1975A7;
+        // align-self: center;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .list-dual {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul {
+        font-size: 15px;
+        list-style: none;
+        position: relative;
+        left: -30px;
+    }
+
+
 }

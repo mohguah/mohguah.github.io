@@ -7,10 +7,15 @@ import AnimatedLetters from '../components/AnimatedLetters';
 import './Home.scss';
 import Portfolio from '../components/Portfolio';
 import SkillCard from '../components/SkillCard';
+// import Leaf from '../assets/images/fall-leaf-rmbg.png';
+import bigleaf from '../assets/images/big-leaf.jpg';
+import fern from '../assets/images/fern.jpg';
+import { FaAngellist, FaAnglesDown, FaChevronDown } from 'react-icons/fa';
+import { BsChevronDoubleDown } from 'react-icons/bs';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = "imon".split("")
+    const nameArray = "Simon".split("")
     const jobArray = "Biologist and developer".split("")
 
     // useEffect(() => {
@@ -21,21 +26,29 @@ const Home = () => {
 
     return (
         <>
-            <Parallax pages={2} className='parallax'>
-                <ParallaxLayer offset={0} speed={2.5}>
+            <Parallax pages={1.7} className='parallax'>
+                <ParallaxLayer
+                    offset={0} speed={0.5}
+                    factor={2} style={{
+                        backgroundImage: `url(${fern})`,
+                        backgroundSize: 'cover',
+                    }}>
+                </ParallaxLayer>
+                <ParallaxLayer offset={0} factor={1} speed={3}>
                     <div className="container home-page">
                         <div className="text-zone">
                             <h1>
                                 <span className={letterClass}>H</span>
-                                <span className={`${letterClass} _12`}>i,</span>
+                                <span className={`${letterClass} _12`}>i!</span>
                                 <span className={`${letterClass} _13`}></span>
                                 <span className={`${letterClass} _14`}>I</span>
                                 <span className={`${letterClass} _15`}>'m</span>
+                                <span className={`${letterClass} _16`}></span>
 
                                 {/* <br /> I'm */}
-                                <img src={LogoTitle} alt="developer" />
+                                {/* <img src={LogoTitle} alt="developer" /> */}
                                 <AnimatedLetters letterClass={letterClass}
-                                    strArray={nameArray} idx={16} />
+                                    strArray={nameArray} idx={17} />
                                 <br />
                                 <AnimatedLetters letterClass={letterClass}
                                     strArray={jobArray} idx={13} />
@@ -45,11 +58,19 @@ const Home = () => {
                             <h2>Bioinformatics / Kelp biology / Ecotoxicology</h2>
                             <Link to="/contact" className='flat-button'>CONTACT ME</Link>
                         </div>
-                        <SkillCard /> 
+                        <SkillCard />
+                        <div className='scroll-message'>
+                            <p>
+                                Take a look at my portfolio
+                            </p>
+                            <span>
+                            <BsChevronDoubleDown color='#FFD700'/>
+                            </span>
+                        </div>
                     </div>
                     {/* <Loader type="ball-triangle-path" /> */}
                 </ParallaxLayer>
-                <ParallaxLayer offset={1} speed={0.5}>
+                <ParallaxLayer offset={0.9} speed={1}>
                     <Portfolio />
                 </ParallaxLayer>
             </Parallax>
