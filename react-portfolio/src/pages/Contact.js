@@ -38,8 +38,8 @@ const Contact = () => {
                             idx={15} />
                     </h1>
                     <p>
-                        I'm looking for a full time junior developer position, 
-                        or a job in biology. However if you have a proposal
+                        I'm looking for a full time position as a junior developer, 
+                        or to work with kelp biology. However if you have a proposal
                         for a freelance opportunity, or any other questions, 
                         don't hesitate to contact me.
                     </p>

@@ -15,23 +15,23 @@ const SkillCard = () => {
                 Fullstack developer
             </h1>
             <p className='p-title'>Languages I speak:</p>
-            <p>R, Python, JavaScript, HTML, CSS, Shell script</p>
+            <p>R, Python, JavaScript, HTML, CSS, Shell Script, Java/SpringBoot</p>
             <p className='p-title'>Dev tools:</p>
             <div className='list-dual'>
             <ul>
                 <li>React</li>
+                <li>Spring</li>
                 <li>Visual Studio Code</li>
                 <li>R Studio</li>
                 <li>IntelliJ</li>
-                <li>Terminal</li>
                 <li>Docker</li>
                 <li>Conda</li>
             </ul>
             <ul>
                 <li>Git Bash / Github</li>
+                <li>Terminal</li>
                 <li>Stripe</li>
                 <li>Sass</li>
-                <li>SLURM</li>
                 <li>SQL</li>
                 <li>Postman</li>
                 <li>Curl</li>

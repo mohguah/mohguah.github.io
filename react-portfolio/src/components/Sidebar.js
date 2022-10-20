@@ -39,11 +39,11 @@ const Sidebar = () => (
                     <FontAwesomeIcon icon={faGithub} color="#4d4d44" />
                 </a>
             </li>
-            <li>
+            {/* <li>
                 <a target="_blank" rel='noreferrer' href='skype:live:slimosimo'>
                     <FontAwesomeIcon icon={faSkype} color="#4d4d44" />
                 </a>
-            </li>
+            </li> */}
         </ul>
     </div>
 )

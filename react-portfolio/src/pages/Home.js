@@ -53,7 +53,7 @@ const Home = () => {
                                 <AnimatedLetters letterClass={letterClass}
                                     strArray={jobArray} idx={13} />
                             </h1>
-                            <h2> R / Spring / Python / JavaScript / Flask</h2>
+                            <h2> R / Python / SpringBoot / React</h2>
                             {/* <br /> */}
                             <h2>Bioinformatics / Kelp biology / Ecotoxicology</h2>
                             <Link to="/contact" className='flat-button'>CONTACT ME</Link>

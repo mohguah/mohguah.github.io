@@ -7,27 +7,61 @@
     margin-left: 28px;
     margin-right: 28px;
 
-    .port-item-1 {
+    .grid-item-1 {
         background-image: url('../assets/images/kelp-media.jpg');
         background-size: cover;
         position: relative;
-        // background-position: 82%;
 
         .title-span {
             color: black;
             top: 10%;
             left: -14%;
         }
+
+        .bread-span {
+            left: -20px;
+            top: -15px;
+        }
+
+        .button1 {
+            position: relative;
+            top: 390px;
+        }
     }
 
-    .port-item-2 {
+    .grid-item-2 {
         background-image: url('../assets/images/holding-burger.jpg');
         background-size: cover;
-        // background-position: 10%;
 
         p {
             color: black;
             top: -24px;
+        }
+    }
+
+    .grid-item-3 {
+        background-image: url('../assets/images/simple_leaf.png');
+        background-size: contain;
+        // background-position-y: 40%;
+        background-position-y: -150px;
+        background-blend-mode: multiply;
+
+        p {
+            color: black;
+        }
+
+        .title-span {
+            position: relative;
+            top: 50px;
+        }
+    }
+
+    .grid-item-4 {
+        background-image: url('../assets/images/abstract_orange.png');
+        background-size: cover;
+
+        p {
+            color: black;
         }
     }
 
@@ -48,15 +82,6 @@
         opacity: 0.85;
         transition: all 1.3s ease;
 
-
-        // .fa-stack {
-        //     position: absolute;
-        // }
-
-        // .fa-stack-2x {
-        //     font-size: 70px;
-        // }
-
         .title-span {
             position: relative;
             text-align: center;
@@ -71,13 +96,12 @@
             visibility: hidden;
             font-size: 18px;
             position: relative;
-            // top: 115px;
-            // left: -20px;
             color: #FAF9F6;
         }
 
         a.bread-span {
             color: #f8f8ff;
+            position: absolute;
             font-size: 15px;
             font-weight: 400;
             letter-spacing: 4px;
@@ -85,15 +109,10 @@
             text-decoration: none;
             padding: 10px 18px;
             border: 1px solid #FAF9F6;
-            margin-top: 25px;
-            float: left;
             animation: fadeIn 1s 1.8s backwards;
             white-space: nowrap;
-            position: absolute;
             right: 50%;
             transform: translateX(50%);
-
-
 
             &:hover {
                 background: #ffd700;

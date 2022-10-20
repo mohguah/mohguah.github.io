@@ -1,34 +1,71 @@
 import './Portfolio.scss';
-import Heatmap from '../assets/images/chosen_maxvalues.png'
-import Kelp from '../assets/images/kelp-media.jpg'
-import Postfilter from '../assets/images/postfilter.png'
-import { GiAlgae } from 'react-icons/gi'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FaCircle, FaGithub, FaHamburger } from 'react-icons/fa';
-import maxvalues from '../assets/images/chosen_maxvalues.png'
-import { Link } from 'react-router-dom';
-// import Paper from "@material-ui/core/Paper";
-// import Grid from "@material-ui/core/grid";
-
 
 const Portfolio = () => {
     return (
         <div className='grid-container'>
-            <div className='grid-item port-item-1'>
-                {/* <span className='fa-stack fa-2x'>
-                    <FaCircle className='fa fa-stack-2x' color='#FFD700' />
-                    <GiAlgae className='fa fa-stack-1x' color='#1975A7' />
-                </span> */}
+            <div className='grid-item grid-item-1'>
                 <p className='title-span'>
                     Differential expression analysis in light stressed sugar kelp
                 </p>
                 <ul className='bread-span'>
-                    <li>Quality control - fastQC/MultiQC</li>
+                    <li>Quality control - Trimmomatic/fastQC/MultiQC</li>
                     <li>De novo assembly - Trinity</li>
                     <li>Completeness - BUSCO</li>
                     <li>Blast - Kraken2</li>
                     <li>Alignment - RSEM/Bowtie2</li>
                     <li>Reduce redundancy - Corset</li>
+                    <br />
+                    <li>Identify differentially expressed genes</li>
+                    <li>Annotate proteins - Diamond Blastx</li>
+                    <li>Annotate GO terms</li>
+                    <li>Heatmaps and figures</li>
+                </ul>
+                <a 
+                target='_blank' 
+                rel='noreferrer' 
+                href="https://github.com/mohguah/kelp-differential-expression" 
+                className='bread-span button1'>Visit Github repo</a>
+            </div>
+            <div className='grid-item grid-item-2'>
+                <p className='title-span'>
+                    Coming soon! Burgermile - reviews, merch, and catering
+                </p>
+                <ul className='bread-span'>
+                    <li>bread</li>
+                    <li>tomato</li>
+                    <li>pickles</li>
+                    <li>burger</li>
+                    <li>bread</li>
+                </ul>
+                <a 
+                target='_blank' 
+                rel='noreferrer' 
+                // href="" 
+                className='bread-span'>Coming soon</a>
+            </div>
+            <div className='grid-item grid-item-3'>
+            <p className='title-span'>
+                    Fullstack app using Spring, SQL, and React
+                </p>
+                <ul className='bread-span'>
+                    <li>Connect to mySQL with Spring</li>
+                    <li>Expose an API containing the data</li>
+                    <li>Consume the API frontend in React</li>
+                </ul>
+                <a 
+                target='_blank' 
+                rel='noreferrer' 
+                href="https://github.com/mohguah/singlepage-app" 
+                className='bread-span button1'>Visit Github repo</a>
+            </div>
+            <div className='grid-item grid-item-4'>
+            <p className='title-span'>
+                    Simple web scraper using Python
+                </p>
+                <ul className='bread-span'>
+                    <li>Make a soup item using Beautiful Soup</li>
+                    <li>Scrape new job offers from Finn.no</li>
+                    <li>Find title, description, company name, location, and link</li>
                 </ul>
                 {/* <img className='bread-span' src={maxvalues} alt='maxvalues' /> */}
                 {/* <a target="_blank" rel='noreferrer' href='https://github.com/mohguah/kelp-differential-expression'>
@@ -37,34 +74,8 @@ const Portfolio = () => {
                 <a 
                 target='_blank' 
                 rel='noreferrer' 
-                href="https://github.com/mohguah/kelp-differential-expression" 
-                className='bread-span'>See in github</a>
-            </div>
-            <div className='grid-item port-item-2'>
-                {/* <span className='fa-stack fa-2x'>
-                    <FaCircle className='fa fa-stack-2x' color='#FFD700' />
-                    <FaHamburger className='fa fa-stack-1x' color='#1975A7' />
-                </span> */}
-                <p className='title-span'>
-                    Burgermile: burger reviews all-inclusive - ongoing
-                </p>
-                <ul className='bread-span'>
-                    <li>bread</li>
-                    <li>bread</li>
-                    <li>bread</li>
-                    <li>bread</li>
-                    <li>bread</li>
-                </ul>
-                <a 
-                target='_blank' 
-                rel='noreferrer' 
-                href="https://github.com/mohguah/kelp-differential-expression" 
-                className='bread-span'>See in github</a>
-            </div>
-            <div className='grid-item port-item-3'>
-            </div>
-            <div className='grid-item port-item-4'>
-                {/* <img src={Kelp} className='portfolio-image' alt='heatmap' /> */}
+                href="https://github.com/mohguah/job-finder" 
+                className='bread-span button1'>Visit Github repo</a>
             </div>
         </div >
     )

@@ -21,7 +21,7 @@ const About = () => {
                             idx={15} />
                     </h1>
                     <p>
-                        I'm an amitious full stack developer looking for an opportunity to
+                        I'm an ambitious full stack developer looking for an opportunity to
                         grow in an established IT company. Although my study provided a fair
                         bit of coding experience, most of my coding skill are self-taught.
                     </p>
