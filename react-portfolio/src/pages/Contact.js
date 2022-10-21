@@ -39,9 +39,10 @@ const Contact = () => {
                     </h1>
                     <p>
                         I'm looking for a full time position as a junior developer, 
-                        or to work with kelp biology. However if you have a proposal
+                        or to work with kelp biology. However, if you have a proposal
                         for a freelance opportunity, or any other questions, 
-                        don't hesitate to contact me.
+                        don't hesitate to contact me at simon.haughom@gmail.com or
+                        using the form below. 
                     </p>
                     <div className='contact-form'>
                         <form ref={form} onSubmit={sendEmail}>
@@ -85,7 +86,7 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
-                <div className='info-map'>
+                {/* <div className='info-map'>
                     Simon Haughom
                     <br />
                     Norway,
@@ -102,7 +103,7 @@ const Contact = () => {
                             <Popup>Simon lives here!</Popup>
                         </Marker>
                     </MapContainer>
-                </div>
+                </div> */}
             </div>
             {/* <Loader type='ball-triangle-path' /> */}
         </>

@@ -15,7 +15,7 @@ const SkillCard = () => {
                 Fullstack developer
             </h1>
             <p className='p-title'>Languages I speak:</p>
-            <p>R, Python, JavaScript, HTML, CSS, Shell Script, Java/SpringBoot</p>
+            <p>R, Python, JavaScript, HTML, CSS, Shell Script, Java/SpringBoot, SQL</p>
             <p className='p-title'>Dev tools:</p>
             <div className='list-dual'>
             <ul>
@@ -32,7 +32,7 @@ const SkillCard = () => {
                 <li>Terminal</li>
                 <li>Stripe</li>
                 <li>Sass</li>
-                <li>SQL</li>
+                <li>mySQL</li>
                 <li>Postman</li>
                 <li>Curl</li>
             </ul>
