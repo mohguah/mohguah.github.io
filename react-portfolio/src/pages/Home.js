@@ -28,8 +28,8 @@ const Home = () => {
         <>
             <Parallax pages={1.7} className='parallax'>
                 <ParallaxLayer
-                    offset={0} speed={0.5}
-                    factor={2} style={{
+                    offset={0} speed={0.3}
+                    factor={2.5} style={{
                         backgroundImage: `url(${fern})`,
                         backgroundSize: 'cover',
                     }}>
@@ -45,8 +45,6 @@ const Home = () => {
                                 <span className={`${letterClass} _15`}>'m</span>
                                 <span className={`${letterClass} _16`}></span>
 
-                                {/* <br /> I'm */}
-                                {/* <img src={LogoTitle} alt="developer" /> */}
                                 <AnimatedLetters letterClass={letterClass}
                                     strArray={nameArray} idx={17} />
                                 <br />
@@ -54,7 +52,7 @@ const Home = () => {
                                     strArray={jobArray} idx={13} />
                             </h1>
                             <h2> R / Python / SpringBoot / React</h2>
-                            {/* <br /> */}
+
                             <h2>Bioinformatics / Kelp biology / Ecotoxicology</h2>
                             <Link to="/contact" className='flat-button'>CONTACT ME</Link>
                         </div>
@@ -68,9 +66,8 @@ const Home = () => {
                             </span>
                         </div>
                     </div>
-                    {/* <Loader type="ball-triangle-path" /> */}
                 </ParallaxLayer>
-                <ParallaxLayer offset={0.9} speed={1}>
+                <ParallaxLayer offset={0.9} factor={1} speed={1}>
                     <Portfolio />
                 </ParallaxLayer>
             </Parallax>

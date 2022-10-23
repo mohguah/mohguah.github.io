@@ -3,14 +3,14 @@
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
-    bottom: -60%;
+    // bottom: 200%;
     margin-left: 28px;
     margin-right: 28px;
 
     .grid-item-1 {
         background-image: url('../assets/images/kelp-media.jpg');
         background-size: cover;
-        position: relative;
+        // position: relative;
 
         .title-span {
             color: black;
@@ -18,24 +18,36 @@
             left: -14%;
         }
 
-        .bread-span {
-            left: -20px;
-            top: -15px;
-        }
+        // .bread-span {
+        //     left: -20px;
+        //     top: -15px;
+        // }
 
-        .button1 {
-            position: relative;
-            top: 390px;
-        }
+        // .button1 {
+        //     position: relative;
+        //     top: 390px;
+        // }
     }
 
     .grid-item-2 {
-        background-image: url('../assets/images/holding-burger.jpg');
-        background-size: cover;
+        background-color: #131a26;
 
         p {
-            color: black;
-            top: -24px;
+            color: #FAF9F6;
+        }
+
+        div.title-span {
+            position: relative;
+            overflow: visible;
+            height: 100%;
+            width: 100%;
+            left: -10px;
+        }
+
+        div.stage-cube-cont {
+            height: 100%;
+            width: 100%;
+            overflow: visible;
         }
     }
 
@@ -65,6 +77,16 @@
         }
     }
 
+    .grid-item-5 {
+        background-image: url('../assets/images/calc.png');
+        background-size:contain;
+        background-position: 0% 80%;
+
+        p {
+            color: black;
+        }
+    }
+
     .grid-item {
         display: block;
         position: relative;
@@ -76,10 +98,11 @@
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.36);
         border-radius: 25px;
         padding: 20px;
-        padding-bottom: 4px;
-        padding-left: 25px;
+        margin-bottom: 20px;
+        // padding-bottom: 4px;
+        // padding-left: 25px;
         font-size: 23px;
-        opacity: 0.85;
+        opacity: 1;
         transition: all 1.3s ease;
 
         .title-span {

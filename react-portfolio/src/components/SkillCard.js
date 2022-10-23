@@ -20,7 +20,7 @@ const SkillCard = () => {
             <div className='list-dual'>
             <ul>
                 <li>React</li>
-                <li>Spring</li>
+                <li>SpringBoot</li>
                 <li>Visual Studio Code</li>
                 <li>R Studio</li>
                 <li>IntelliJ</li>
