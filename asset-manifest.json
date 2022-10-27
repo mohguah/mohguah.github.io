@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.d614702a.css",
-    "main.js": "/static/js/main.21fc8689.js",
+    "main.css": "/static/css/main.65e3fa7b.css",
+    "main.js": "/static/js/main.5d8baaaf.js",
     "static/js/496.043184c6.chunk.js": "/static/js/496.043184c6.chunk.js",
     "static/media/simple_leaf.png": "/static/media/simple_leaf.09277de56cdf2f12c6f8.png",
+    "static/media/abstract_green.png": "/static/media/abstract_green.00f5a6fd31c758711df8.png",
     "static/media/abstract_orange.png": "/static/media/abstract_orange.a58dc1423d736dddb443.png",
     "static/media/kelp-media.jpg": "/static/media/kelp-media.392c902c3c5ca9a462f8.jpg",
     "static/media/big-leaf.jpg": "/static/media/big-leaf.9d2aefae54596828f9e6.jpg",
@@ -15,12 +16,12 @@
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "static/media/reshot-icon-professional-employee.svg": "/static/media/reshot-icon-professional-employee.325ace3c38a27624cca849c8a519b2f3.svg",
     "index.html": "/index.html",
-    "main.d614702a.css.map": "/static/css/main.d614702a.css.map",
-    "main.21fc8689.js.map": "/static/js/main.21fc8689.js.map",
+    "main.65e3fa7b.css.map": "/static/css/main.65e3fa7b.css.map",
+    "main.5d8baaaf.js.map": "/static/js/main.5d8baaaf.js.map",
     "496.043184c6.chunk.js.map": "/static/js/496.043184c6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d614702a.css",
-    "static/js/main.21fc8689.js"
+    "static/css/main.65e3fa7b.css",
+    "static/js/main.5d8baaaf.js"
   ]
 }
