@@ -30,26 +30,46 @@
     }
 
     .grid-item-2 {
-        background-color: #131a26;
+        background-image: url('../assets/images/abstract_green.png');
+        background-size: cover;
+        // overflow: auto;
+        // position: relative;
 
         p {
-            color: #FAF9F6;
+            color: black;
         }
 
         div.title-span {
             position: relative;
-            overflow: visible;
-            height: 100%;
-            width: 100%;
-            left: -10px;
-        }
+            justify-content: center;
+            align-items: center;
 
-        div.stage-cube-cont {
-            height: 100%;
-            width: 100%;
-            overflow: visible;
+            // overflow: visible;
+            // height: 100%;
+            // width: 100%;
+            // left: -10px;
         }
     }
+
+    // .grid-item-2::before {
+    //     content: "";
+    //     position: fixed;
+    //     left: 0;
+    //     right: 0;
+    //     z-index: -1;
+
+    //     display: block;
+    //     background-image: url('../assets/images/abstract_green.png');
+    //     background-size: cover;
+    //     width: 100%;
+    //     height: 100%;
+
+    //     -webkit-filter: blur(5px);
+    //     -moz-filter: blur(5px);
+    //     -o-filter: blur(5px);
+    //     -ms-filter: blur(5px);
+    //     filter: blur(5px);
+    // }
 
     .grid-item-3 {
         background-image: url('../assets/images/simple_leaf.png');
@@ -79,7 +99,7 @@
 
     .grid-item-5 {
         background-image: url('../assets/images/calc.png');
-        background-size:contain;
+        background-size: contain;
         background-position: 0% 80%;
 
         p {

@@ -29,11 +29,11 @@ const Portfolio = () => {
 			</div>
 			<div className='grid-item grid-item-2'>
 				<p className='title-span'>
-					My website
+					Portfolio website using React
 				</p>
-				<div className='title-span'>
+				{/* <div className='title-span'>
 					<CubeSpinner />
-				</div>
+				</div> */}
 				<ul className='bread-span'>
 					<li>React</li>
 					<li>Material UI</li>
