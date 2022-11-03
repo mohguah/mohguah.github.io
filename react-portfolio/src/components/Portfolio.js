@@ -15,10 +15,8 @@ const Portfolio = () => {
 					<li>Blast - Kraken2</li>
 					<li>Alignment - RSEM/Bowtie2</li>
 					<li>Reduce redundancy - Corset</li>
-					<br />
 					<li>Identify differentially expressed genes</li>
-					<li>Annotate proteins - Diamond Blastx</li>
-					<li>Annotate GO terms</li>
+					<li>Annotate proteins and GO terms</li>
 					<li>Heatmaps and figures</li>
 				</ul>
 				<a
@@ -32,7 +30,7 @@ const Portfolio = () => {
 					System Usability Scale app using Spring Boot
 				</p>
 				<ul className='bread-span'>
-					<li>JPA, Hibernate, HttpSession, Thymeleaf</li>
+					<li>JPA, Hibernate, HttpSession, Thymeleaf, Model</li>
 					<li>Scale created in 1986  </li>
 					<li>Agnostic system usability measurement</li>
 					<li>User activity tracked using HttpSession</li>
@@ -42,7 +40,7 @@ const Portfolio = () => {
 				<a
 					target='_blank'
 					rel='noreferrer'
-					href="https://github.com/mohguah/system-usability-scale" 
+					href="https://github.com/mohguah/system-usability-scale"
 					className='bread-span'>Visit Github repo</a>
 			</div>
 			<div className='grid-item grid-item-2'>
@@ -64,7 +62,7 @@ const Portfolio = () => {
 				<a
 					target='_blank'
 					rel='noreferrer'
-					href="https://github.com/mohguah/mohguah.github.io" 
+					href="https://github.com/mohguah/mohguah.github.io"
 					className='bread-span'>Visit Github repo</a>
 			</div>
 			<div className='grid-item grid-item-3'>

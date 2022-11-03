@@ -3,6 +3,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    background-image: linear-gradient(#ff9d2f, #ff6126);
 }
 
 .top-tags {
@@ -54,9 +55,9 @@
 
     p {
         font-style: 13px;
-        color: #fff;
+        color: #4d4d4e;
         font-family: sans-serif;
-        font-weight: 300;
+        font-weight: 400;
         min-width: fit-content;
         animation: pulse 1s;
 

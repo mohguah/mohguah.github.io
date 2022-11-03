@@ -28,65 +28,65 @@ const Contact = () => {
     }
 
     return (
-        <>
-            <div className='container contact-page'>
-                <div className='text-zone'>
-                    <h1>
-                        <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={'Contact me'.split("")}
-                            idx={15} />
-                    </h1>
-                    <p>
-                        I'm looking for a full time position as a junior developer, 
-                        or to work with kelp biology. However, if you have a proposal
-                        for a freelance opportunity, or any other questions, 
-                        don't hesitate to contact me at simon.haughom@gmail.com or
-                        using the form below. 
-                    </p>
-                    <div className='contact-form'>
-                        <form ref={form} onSubmit={sendEmail}>
-                            <ul>
-                                <li className='half'>
-                                    <input
-                                        type='text'
-                                        name='name'
-                                        id='name'
-                                        placeholder='Name'
-                                        required />
-                                </li>
-                                <li className='half'>
-                                    <input
-                                        type='email'
-                                        name='email'
-                                        id='email'
-                                        placeholder='Email'
-                                        required />
-                                </li>
-                                <li>
-                                    <input
-                                        type='text'
-                                        name='subject'
-                                        id='subject'
-                                        placeholder='Subject'
-                                        required />
-                                </li>
-                                <li>
-                                    <textarea
-                                        name='message'
-                                        id='message'
-                                        placeholder='Message'
-                                        required />
-                                </li>
-                                <li>
-                                    <input
-                                        type='submit' id='button' className='flat-button' value='SEND' />
-                                </li>
-                            </ul>
-                        </form>
-                    </div>
+
+        <div className='container contact-page'>
+            <div className='text-zone'>
+                <h1>
+                    <AnimatedLetters
+                        letterClass={letterClass}
+                        strArray={'Contact me'.split("")}
+                        idx={15} />
+                </h1>
+                <p>
+                    I'm looking for a full time position as a junior developer,
+                    or to work with kelp biology. However, if you have a proposal
+                    for a freelance opportunity, or any other questions,
+                    don't hesitate to contact me at simon.haughom@gmail.com or
+                    using the form below.
+                </p>
+                <div className='contact-form'>
+                    <form ref={form} onSubmit={sendEmail}>
+                        <ul>
+                            <li className='half'>
+                                <input
+                                    type='text'
+                                    name='name'
+                                    id='name'
+                                    placeholder='Name'
+                                    required />
+                            </li>
+                            <li className='half'>
+                                <input
+                                    type='email'
+                                    name='email'
+                                    id='email'
+                                    placeholder='Email'
+                                    required />
+                            </li>
+                            <li>
+                                <input
+                                    type='text'
+                                    name='subject'
+                                    id='subject'
+                                    placeholder='Subject'
+                                    required />
+                            </li>
+                            <li>
+                                <textarea
+                                    name='message'
+                                    id='message'
+                                    placeholder='Message'
+                                    required />
+                            </li>
+                            <li>
+                                <input
+                                    type='submit' id='button' className='flat-button' value='SEND' />
+                            </li>
+                        </ul>
+                    </form>
                 </div>
-                {/* <div className='info-map'>
+            </div>
+            {/* <div className='info-map'>
                     Simon Haughom
                     <br />
                     Norway,
@@ -104,9 +104,7 @@ const Contact = () => {
                         </Marker>
                     </MapContainer>
                 </div> */}
-            </div>
-            {/* <Loader type='ball-triangle-path' /> */}
-        </>
+        </div>
     )
 }
 

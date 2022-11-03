@@ -1,4 +1,9 @@
 
+// .contact-page {
+//     background-image: linear-gradient(#ff9d2f, #ff6126);
+//     background-size: cover;
+// }
+
 .contact-form {
     width: 100%;
     margin-top: 20px;
@@ -38,10 +43,10 @@
     input[type='email'] {
         width: 100%;
         border: 0;
-        background: #1975A7;
+        background: #FAF9F6;
         height: 50px;
         font-size: 16px;
-        color: #FAF9F6;
+        color: #4d4d4e;
         padding: 0 20px;
         box-sizing: border-box;
     }
@@ -49,10 +54,10 @@
     textarea {
         width: 100%;
         border: 0;
-        background: #1975A7;
+        background: #FAF9F6;
         height: 50px;
         font-size: 16px;
-        color: #fff;
+        color: #4d4d4e;
         padding: 20px;
         min-height: 150px;
         box-sizing: border-box;
@@ -68,6 +73,7 @@
         border: 1px solid #ffd700;
         float: right;
         border-radius: 4px;
+        cursor: pointer;
     }
 }
 

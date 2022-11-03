@@ -1,13 +1,23 @@
 
-.parallax {
-    background-image: linear-gradient(#ff9d2f, #ff6126);
+.para-0 {
+    background-image: linear-gradient(135deg, #777, #111);
+    background-size: cover;
 }
+
+.para-1 {
+    position: relative;
+    height: 800px;
+    background-image: linear-gradient(#ff9d2f, #ff6126);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+}
+
 
 .home-page {
 
     display: flex;
     justify-content: space-around;
-
+    position: relative;
+    
     .text-zone {
         position: relative;
         left: 2%;
@@ -18,7 +28,8 @@
     }
 
     h1 {
-        color: #FAF9F6;
+        // color: #FAF9F6;
+        color: #4d4d4e;
         font-size: 53px;
         margin: 0;
         font-family: 'Coolvetica';
@@ -59,7 +70,8 @@
     }
 
     h2 {
-        color: #FAF9F6;
+        // color: #FAF9F6;
+        color: #4d4d4e;
         margin-top: 20px;
         font-weight: 400;
         font-size: 18px;
@@ -69,14 +81,14 @@
     }
 
     .flat-button {
-        color: #f8f8ff;
+        color: #4d4d4e;
         font-size: 15px;
         font-weight: 400;
         letter-spacing: 4px;
         font-family: sans-serif;
         text-decoration: none;
         padding: 10px 18px;
-        border: 1px solid #FAF9F6;
+        border: 1px solid #4d4d4e;
         margin-top: 25px;
         float: left;
         animation: fadeIn 1s 1.8s backwards;
@@ -94,7 +106,7 @@
         flex-direction: row;
         bottom: 69px;
         left: 50px;
-        color: #FAF9F6;
+        color: #4d4d4e;
         font-size: 17px;
 
         svg {

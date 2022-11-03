@@ -28,16 +28,16 @@ const Home = () => {
 
     return (
         <>
-            <Parallax pages={2.3} className='parallax'>
+            <Parallax pages={1.8} className='para-0'>
                 <ParallaxLayer
-                    offset={0} speed={0.3}
-                    factor={2.5} style={{
-                        background: '#131a26',
+                    offset={0}
+                    factor={2} style={{
+                        // background: '#131a26',
                         // backgroundImage: `url(${undersea})`,
-                        backgroundSize: 'cover',
+                        // backgroundSize: 'cover',
                     }}>
                 </ParallaxLayer>
-                <ParallaxLayer offset={0} factor={1} speed={3}>
+                <ParallaxLayer offset={0} factor={1} speed={1} className='para-1'>
                     <div className="container home-page">
                         <div className="text-zone">
                             <h1>
@@ -65,12 +65,12 @@ const Home = () => {
                                 Take a look at my portfolio
                             </p>
                             <span>
-                            <BsChevronDoubleDown color='#FFD700'/>
+                                <BsChevronDoubleDown color='#FFD700' />
                             </span>
                         </div>
                     </div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={0.9} factor={1} speed={1}>
+                <ParallaxLayer offset={0.9} factor={1} speed={1} className='para-2'>
                     <Portfolio />
                 </ParallaxLayer>
             </Parallax>
