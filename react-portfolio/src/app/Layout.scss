@@ -1,16 +1,8 @@
+
 .page {
     width: 100%;
     height: 100%;
     position: absolute;
-    // background-image: url('../assets/images/fern.jpg');
-    // background-size: cover;
-
-    // background: linear-gradient(to bottom right, #0098D6, #0079AB);
-
-    // background: #0098D6;
-    // background: -moz-linear-gradient(top, #0098D6 0%, #0079AB 50%, #006994 100%);
-    // background: -webkit-linear-gradient(top, #0098D6 0%, #0079AB 50%, #006994 100%);
-    // background: linear-gradient(to bottom, #0098D6 0%, #0079AB 50%, #006994 100%);
 }
 
 .top-tags {
@@ -58,30 +50,6 @@
         position: relative;
         margin-bottom: 40px;
         left: -10px;
-
-        // &:before {
-        //     // content: '<h1>';
-        //     font-family: 'La Belle Aurore', cursive;
-        //     color: #fdd700;
-        //     font-size: 18px;
-        //     position: absolute;
-        //     margin-top: -10px;
-        //     left: -10px;
-        //     opacity: 0.6;
-        //     line-height: 18px;
-        // }
-
-        // &:after {
-        //     // content: '<h1/>';
-        //     font-family: 'La Belle Aurore';
-        //     font-size: 18px;
-        //     line-height: 18px;
-        //     position: absolute;
-        //     left: -30px;
-        //     bottom: -20px;
-        //     margin-left: 20px;
-        //     opacity: 0.6;
-        // }
     }
 
     p {

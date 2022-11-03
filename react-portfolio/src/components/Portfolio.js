@@ -27,6 +27,24 @@ const Portfolio = () => {
 					href="https://github.com/mohguah/kelp-differential-expression"
 					className='bread-span button1'>Visit Github repo</a>
 			</div>
+			<div className='grid-item grid-item-6'>
+				<p className='title-span'>
+					System Usability Scale app using Spring Boot
+				</p>
+				<ul className='bread-span'>
+					<li>JPA, Hibernate, HttpSession, Thymeleaf</li>
+					<li>Scale created in 1986  </li>
+					<li>Agnostic system usability measurement</li>
+					<li>User activity tracked using HttpSession</li>
+					<li>Results persisted in H2 database</li>
+					<li>Global statistics shown at /globals</li>
+				</ul>
+				<a
+					target='_blank'
+					rel='noreferrer'
+					href="https://github.com/mohguah/system-usability-scale" 
+					className='bread-span'>Visit Github repo</a>
+			</div>
 			<div className='grid-item grid-item-2'>
 				<p className='title-span'>
 					Portfolio website using React
@@ -66,7 +84,7 @@ const Portfolio = () => {
 			</div>
 			<div className='grid-item grid-item-4'>
 				<p className='title-span'>
-					Simple web scraper using Python
+					Web scraper using Python
 				</p>
 				<ul className='bread-span'>
 					<li>Make a soup item using Beautiful Soup</li>

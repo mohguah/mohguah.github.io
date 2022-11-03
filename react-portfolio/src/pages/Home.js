@@ -10,8 +10,10 @@ import SkillCard from '../components/SkillCard';
 // import Leaf from '../assets/images/fall-leaf-rmbg.png';
 import bigleaf from '../assets/images/big-leaf.jpg';
 import fern from '../assets/images/fern.jpg';
+import undersea from '../assets/images/underwater.jpg'
 import { FaAngellist, FaAnglesDown, FaChevronDown } from 'react-icons/fa';
 import { BsChevronDoubleDown } from 'react-icons/bs';
+import { SiRoots } from 'react-icons/si';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -26,11 +28,12 @@ const Home = () => {
 
     return (
         <>
-            <Parallax pages={1.7} className='parallax'>
+            <Parallax pages={2.3} className='parallax'>
                 <ParallaxLayer
                     offset={0} speed={0.3}
                     factor={2.5} style={{
-                        backgroundImage: `url(${fern})`,
+                        background: '#131a26',
+                        // backgroundImage: `url(${undersea})`,
                         backgroundSize: 'cover',
                     }}>
                 </ParallaxLayer>
